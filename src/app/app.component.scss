@@ -1,0 +1,110 @@
+@import '~compass-mixins/lib/compass/css3';
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+.icon svg
+{
+    width: 34px;
+} 
+
+.centered{
+    color: #eaeaea;
+    // background: rgb(97, 96, 96);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 60px;
+    width: 100vw;
+    position: relative;
+    z-index:1111;
+    text-align: center;
+    transition: all 0.5s;;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+
+    width: 800px;
+    top: 25%;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -30px;
+}
+.centered span{
+    font-weight: 900;
+}
+.desc{
+    // background: #333;
+    color:#eaeaea;
+    text-transform:uppercase;
+    // padding-top: 50px;
+
+    .text{
+        padding-top: 30px;
+        text-align: center;
+        width: 470px;
+        margin: 0;
+    }
+    h2{
+        vertical-align:middle;
+        font-size: 40px;
+        margin: 0;
+    }
+    h3{
+        .blue{
+            color: #0055A4
+        }
+        .white{
+            color: #fff
+        }
+        .red {
+            color:#EF4135
+        }
+        font-weight: 300;
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+    h5{
+        font-weight: 900;
+        color:#6d6d6d;
+        font-size: 15px;
+        letter-spacing: 3.9px;
+        margin: 0;
+    }
+
+}
+
+
+.topnav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    color: #eaeaea;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.topnav li{
+    text-align:center;
+    color: #eaeaea;
+    margin: 0px 7px;
+    display: inline-block;
+    font-size: 30px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+.topnav li:first-child{
+    margin-left: 10px;
+}
+.topnav li:hover{
+    .fa-linkedin {
+        color: #0a66c2
+    }
+    color: unset;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+.topnav a{
+    text-decoration: none;
+    color: inherit;
+}
