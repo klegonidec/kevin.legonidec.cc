@@ -1,18 +1,21 @@
-@import '~compass-mixins/lib/compass/css3';
+// @import '~compass-mixins/lib/compass/css3';
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+$centered_size: 1200px;
+$base_font_size: 60px;
 
 .icon svg
 {
     width: 34px;
-} 
+}
 
 .centered{
     color: #eaeaea;
     // background: rgb(97, 96, 96);
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 60px;
+    font-size: $base_font_size*1.5;
     width: 100vw;
     position: relative;
     z-index:1111;
@@ -21,11 +24,11 @@
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
 
-    width: 800px;
+    width: $centered_size;
     top: 25%;
     position: absolute;
     left: 50%;
-    margin-left: -400px;
+    margin-left: -($centered_size/2);
     margin-top: -30px;
 }
 .emphasis{
@@ -45,7 +48,7 @@
     }
     h2{
         vertical-align:middle;
-        font-size: 40px;
+        font-size: $base_font_size;
         font-weight: 300;
         margin: 0;
     }
@@ -60,14 +63,14 @@
             color:#EF4135
         }
         font-weight: 300;
-        font-size: 19px;
+        font-size: $base_font_size*0.5;
         letter-spacing: 0.5px;
         margin: 0;
     }
     h5{
         font-weight: 900;
         color:#6d6d6d;
-        font-size: 15px;
+        font-size: $base_font_size*0.375;
         letter-spacing: 3.9px;
         margin: 0;
     }
