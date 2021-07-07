@@ -1,9 +1,6 @@
-// @import '~compass-mixins/lib/compass/css3';
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
-
-$centered_size: 1200px;
-$base_font_size: 60px;
+$base_font_size_per: 7vmin;
+$base_font_size: 40px;
 
 .icon svg
 {
@@ -15,7 +12,7 @@ $base_font_size: 60px;
     // background: rgb(97, 96, 96);
     text-transform: uppercase;
     font-weight: 300;
-    font-size: $base_font_size*1.5;
+    font-size: $base_font_size_per*1.5;
     width: 100vw;
     position: relative;
     z-index:1111;
@@ -23,22 +20,17 @@ $base_font_size: 60px;
     transition: all 0.5s;;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
-
-    width: $centered_size;
-    top: 25%;
-    position: absolute;
-    left: 50%;
-    margin-left: -($centered_size/2);
-    margin-top: -30px;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
 }
 .emphasis{
     font-weight: 900;
 }
 .desc{
-    // background: #333;
     color:#eaeaea;
     text-transform:uppercase;
-    // padding-top: 50px;
 
     .text{
         padding-top: 30px;
@@ -48,7 +40,7 @@ $base_font_size: 60px;
     }
     h2{
         vertical-align:middle;
-        font-size: $base_font_size;
+        font-size: $base_font_size_per;
         font-weight: 300;
         margin: 0;
     }
@@ -63,14 +55,14 @@ $base_font_size: 60px;
             color:#EF4135
         }
         font-weight: 300;
-        font-size: $base_font_size*0.5;
+        font-size: $base_font_size_per*0.5;
         letter-spacing: 0.5px;
         margin: 0;
     }
     h5{
         font-weight: 900;
         color:#6d6d6d;
-        font-size: $base_font_size*0.375;
+        font-size: $base_font_size_per*0.375;
         letter-spacing: 3.9px;
         margin: 0;
     }
@@ -112,3 +104,4 @@ $base_font_size: 60px;
     text-decoration: none;
     color: inherit;
 }
+  
